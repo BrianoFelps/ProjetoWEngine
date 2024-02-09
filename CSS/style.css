@@ -159,12 +159,16 @@ textarea:focus, input:focus, select:focus {
     transition: 0.2s;
 }
 
-/* Conteúdo footer */
+/* Container footer */
 
 #containerFooter {
-    display: flex;
+    margin: 15px 0; 
+}
+
+/* Container Superior */
+#contSuperior {
     align-items: center;
-    margin: 15px 0;
+    display: flex; 
 }
 
 #containerFooter span {
@@ -180,4 +184,50 @@ textarea:focus, input:focus, select:focus {
 
 #containerFooter img:hover, #containerFooter span:hover{
     cursor: pointer;
+}
+
+/* Container Inferior */
+
+.botao a {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#contInferior {
+    margin-top: 25px;
+}
+
+#dupla1 .botao {
+    padding: 3px 30px;
+    margin: 5px;
+    background-color: #12a8ff;
+}
+
+#dupla1 .botao:hover {
+    background-color: #1196e4;
+    transition: 0.2s;
+}
+
+#dupla1 .botao a{
+    color: white;
+}
+
+#dupla2 .botao {
+    padding: 3px 22.2px;
+    margin: 5px;
+    background-color: #e4e4e4;
+}
+
+#dupla2 .botao:hover {
+    background-color: #d3d3d3;
+    transition: 0.2s;
+}
+
+#dupla2 .botao a {
+    color: black;
+}
+
+#dupla1, #dupla2 {
+    display: flex;
 }
