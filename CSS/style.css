@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul, ul a, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a {
+    color: #12a8ff;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* BarradeAcesso */
+
+#containerAcesso .embaixo {
+    clear: both;
+    border-bottom: 3px solid #00A3FF;
+}
+
+#containerAcesso #barra li a {
+    font-size: 1.1em;
+    color: black;
+}
+
+#containerAcesso #barra li.salvo, li.bussola, li.steam {
+    float: left;
+    margin: 30px 10px 0px 0px;
+    border: 2px solid #00A3FF;
+    border-bottom: none;
+    padding: 2px 2px 2px 20px;
+    cursor: pointer;
+}
+
+#containerAcesso #barra #selecionado {
+    background: #00A3FF url(../Res/Img/icons8-save-502.png) no-repeat left center;
+    background-size: 20px;
+}
+
+#containerAcesso #barra #selecionado a {
+    color: #fff;
+}
+
+#containerAcesso .salvo {
+    background: url(../Res/Img/icons8-save-30.png) no-repeat left center;
+    background-size: 20px;
+}
+
+#containerAcesso .bussola {
+    background: url(../Res/Img/icons8-compass-30p.png) no-repeat left center;
+    background-size: 20px;
+}
+
+#containerAcesso .steam {
+    background: url(../Res/Img/icons8-steam-48.png) no-repeat left center;
+    background-size: 20px;
+}
+
+#containerAcesso #itensAcesso li{
+    float: right;
+    margin: 30px 5px 0px 10px;
+    padding: 2px 0px 0px 0px;
+    cursor: pointer;
+}
+
+#containerAcesso #itensAcesso li img{
+    width: 20px;
+    height: 20px;
+}
+
+/* Conteúdo Principal topo */
+
+#conteudoPrincipalTop {
+    clear: both;
+}
+
+#conteudoPrincipalTop form {
+    display: flex;
+    margin-top: 10px;
+}
+
+#conteudoPrincipalTop form #pesquisa{
+    font-size: 19px;
+    width: 40%;
+    height: 30px;
+    border: 1px solid #e2e2e2;
+    border-right: none;
+    padding: 3px;
+}
+
+#conteudoPrincipalTop form #imagemLupa{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e2e2e2;
+    border-left: none;
+    background: #fff;
+    padding: 8px;
+}
+
+#conteudoPrincipalTop form #avaliacao {
+    margin-left: 20%;
+    font-size: 1.1em;
+    border: 1px solid #e2e2e2;
+    padding-left: 10px;
+}
+
+#filtragem {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+#conteudoPrincipalTop #filtragem img{
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+}
+
+/* Conteúdo principal wallpapers */
+
+#conteudoPrincipal {
+    height: 72vh;
+    /* height: 500px; */
+    overflow-y: auto;
+}
+
+#conteudo {
+    margin: 10px 0; 
+    background: #ebebeb;
+    padding-bottom: 5px;
+}
+
+#conteudo img {
+    width: 205px;
+    height: 205px;
+    object-fit: cover;
+}
+
+#conteudo img:hover {
+    cursor: pointer;
+    opacity: 90%;
+    transition: 0.2s;
+}
+
+/* Conteúdo footer */
+
+#containerFooter {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+#containerFooter span {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#containerFooter img{
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+#containerFooter img:hover, #containerFooter span:hover{
+    cursor: pointer;
+}
