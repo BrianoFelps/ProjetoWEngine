@@ -190,18 +190,14 @@ textarea:focus, input:focus, select:focus {
 
 /* Container Inferior */
 
-input[type="range"]{
-    position: absolute;
-    left: 45%;
-}
-
-.botao a {
+.botao a, .botao label {
     display: flex;
     align-items: center;
     margin: 0 auto;
 }
 
 #contInferior {
+    position: relative;
     margin-top: 10px;
 }
 
@@ -231,10 +227,99 @@ input[type="range"]{
     transition: 0.2s;
 }
 
-#dupla2 .botao a {
+#dupla2 .botao label,#dupla2 .botao a{
     color: black;
+    cursor: pointer;
+    text-align: center;
 }
 
 #dupla1, #dupla2 {
     display: flex;
+}
+
+#opacidade{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 410px;
+    bottom: 8px;
+}
+
+/* Modal */
+.modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.modalContainer #modal {
+    background: white;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    z-index: 3;
+    position: fixed;
+    padding: 0px 20px;
+}
+
+.modalContainer #modal #title {
+    display: flex;
+    width: 100%;
+    background: #1196e4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.modalContainer #modal #message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.modalContainer #modal .button {
+    width: 100%;
+    padding: 20px;
+}
+
+.modalContainer #modal button{
+    width: 100%;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.modalContainer #modal button:hover {
+    background-color: gray;
+    color: white;
+    transition: 0.2s;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    backdrop-filter: blur(5px);
 }

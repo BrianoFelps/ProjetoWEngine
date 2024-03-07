@@ -18,12 +18,12 @@
                         </a>
                     </li>
                     <li class="bussola">
-                        <a href="descubra.html">
+                        <a onclick="openModal()">
                             Descubra
                         </a>
                     </li>
                     <li class="steam">
-                        <a href="of.html">
+                        <a onclick="openModal()">
                             Oficina
                         </a>
                     </li>
@@ -124,10 +124,11 @@
                         </div>
                         <div id="dupla2">
                             <div class="botao">
-                                <a href="">
+                                <label for="seletorArquivos">
                                     <img src="Res/Img/icons8-upload-30.png" alt="">
                                     Abrir pelo arquivo
-                                </a>
+                                </label>
+                                <input type="file" id="seletorArquivos" multiple webkitdirectory style="display:none;">
                             </div>
                             <div class="botao">
                                 <a href="">
@@ -137,14 +138,23 @@
                             </div>
                         </div>
                     </div>
-                    <img src="" alt="">
-                    <input type="range" min="1" max="5">
+                    <div id="opacidade">
+                        <img src="Res/Img/icons8-opacidade-50.png" alt="">
+                        <input type="range" min="1" max="100">
+                    </div>
                 </div>
-
             </div>
+            <!-- Fim containerFooter -->
 
+            <!-- Modal = -->
+            <div id="modalContainer" class="modalContainer">
+            </div>
+            <!-- Janela aberta com prioridade, geralmente usada para criar mensagens de alerta -->
+            <div id="modalOverlay" class="modalOverlay">
+            </div>
         </div>
         <!-- Fim container -->
+        <script src="JS/index.js"></script>
     </body>
 
 </html>
