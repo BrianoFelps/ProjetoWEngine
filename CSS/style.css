@@ -24,6 +24,7 @@ textarea:focus, input:focus, select:focus {
 }
 
 #container {
+    min-width: 935px;
     width: 90%;
     margin: 0 auto;
 }
@@ -114,11 +115,12 @@ textarea:focus, input:focus, select:focus {
     padding: 8px;
 }
 
-#conteudoPrincipalTop form #avaliacao {
-    margin-left: 20%;
+#conteudoPrincipalTop form #categorias {
+    margin-left: 10%;
     font-size: 1.1em;
     border: 1px solid #e2e2e2;
-    padding-left: 10px;
+    padding-right: 110px;
+    padding-left: 5px;
 }
 
 #filtragem {
@@ -162,7 +164,7 @@ textarea:focus, input:focus, select:focus {
 /* Container footer */
 
 #containerFooter {
-    margin: 15px 0; 
+    margin: 5px 0; 
 }
 
 /* Container Superior */
@@ -188,6 +190,11 @@ textarea:focus, input:focus, select:focus {
 
 /* Container Inferior */
 
+input[type="range"]{
+    position: absolute;
+    left: 45%;
+}
+
 .botao a {
     display: flex;
     align-items: center;
@@ -195,7 +202,7 @@ textarea:focus, input:focus, select:focus {
 }
 
 #contInferior {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 #dupla1 .botao {
